@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "datazoomcamp-project-420918",
+  "private_key_id": "f66f02d20ed70423def4db55f5b0151e60231945",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDW93QEAZms6O0R\nYUrKPsA2zhRnTHrbWccSCtFGH4tywlLDz0PLjhZO9uHbmCnpgWVX04UDeS2DepDq\n+B1OIUJ4m1PM+IO6ZlWAnMigopKdGMvh3RzxPMnudPDkbDPzCo16VxzAyVMWY6Gk\nZ+HSHT1s/t6EuDseYoyIrb1kSk6eBLinsAAKyK/ESoseFsN82XHPX3XGVHa3rUvf\nzmFkYibd7W7+amMj7ATyaT5duApgHK5K4XJqyOYBVpLnI4SEpGD1q5n4Hpnp4KOK\nABKUABninio1P/u4tbuApLVdpFKgSICTNrp6U5t3VDEHAZS2ownyystG742HzJX6\nNgWnL1L/AgMBAAECggEAKwm154tuegjUVdN1xtITZ6WQvjG4syvhSEJ0LabpI1u2\neE+J0jorSznwdCed1Is8f/3wNobPTvB+DR0JuPe9uCnY+EOVE/+jBLHfFRIXam5p\ne1nqjn3OK/irtf/X0sP9GU5RimOESApAdYr60jdacfUBFe9Qnr+6RS8LqQWbgdUw\nOALCMjClcZdO+8CRfknkdLg6fBpQaROj3mSCqytVz6gRsvVcvsBYTBH7Lh2N3/jJ\nHcOazhwEral3c8zEx8u1A6bK6RoryrdjMdIayWT3nINXXerBxKkh+6EQOm52rELu\nWM3ZQ1ptfOUtHOLMVl5aDrccJuSYa7iYW6ClaOvXcQKBgQDqwnJURfHZrYnLIoIR\nSzaR9MzTMP4g/h+niZPnBGmy4PmV4K908FpRgfaq6NtYyotv4JfGSC5ASO2TGvDD\nvuWPM7ClCgNmhUj/zY/TGZlrWP0Z2AEc1xvaxJn9LhFa7EldLAr+D+aUSByu4hjO\nRl+Q5b3qARW+JeXgnJqnflfeaQKBgQDqao7Z2qy9REG5WRC9iEuWqD3Hbr+9v4/F\nCUBUfchmCcD/C16Sk7JXZi3zs3An4w0Omm0XvgejZ6IL2Z4H9Ly3RlNAUk/Iv+Yi\nBlvT8eO0z4l1U73QPXWdSmkddM3ZT5AwRAc661HVTwub76WTby1R5EUIzS6Y9fy3\nCgre60zJJwKBgB4QguXKA1wWPmRWagPe9wEgMa8GQjVldhZVpyxZw1OWPkB0guPd\n+CMiGr3ujlDDt7G/OJC7I7k13b8OHzFiXDHHs+Ke8qqJfTzNTZMCX0SBJADQSeww\nnC+bKAFlifFz+z1Ea6/3x1bMGWhIKlcYahq7YWP7eZZdciAeziuPIZ+pAoGASI50\n6s95mhePdEwyF0ghhV9Lx/fql1O8r1Meu0g3iAXK2+Zr/liC4fR5kq3esCnh97wq\nuieSe6xvBtXzySiiZOP6jrUrhsqG888eCysavPNj65Hg9ZygU/AdOwXVVUcALUBR\nMJZ3vNt7j2eMy2alE2zhRUkk/ClfcFRGaxtPqA8CgYEAi5yKSqJI1cDp0lSwchvJ\nNRTbcf9FcA5bgDOgTdDfBSUUfUm1D5OpqPFFOg5kqPcGO8LEkfCuNypjkgwL6Rnw\nC8XOEaA6uFrNTQKN+GPMaEq8nFhiR2Nvj+2X04iPEXJkFC4nDBjrdDD0/L3PPw7u\nB3YBhkDK3ZeS8GGwD+q5A1s=\n-----END PRIVATE KEY-----\n",
+  "client_email": "data-ingest-via-docker@datazoomcamp-project-420918.iam.gserviceaccount.com",
+  "client_id": "114106728657788724610",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/data-ingest-via-docker%40datazoomcamp-project-420918.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
