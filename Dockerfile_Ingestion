@@ -1,0 +1,22 @@
+# Use an official Python runtime as a parent image
+FROM python:3.8-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the script and the CSV files into the container
+COPY Ingest_data.py /app/Ingest_data.py
+COPY 1_Monitoring_locations.csv /app/1_Monitoring_locations.csv
+COPY 2014_Jan_March.csv /app/2014_Jan_March.csv
+
+# Install the google-cloud-storage library
+RUN pip install --no-cache-dir google-cloud-storage pandas
+
+# Environment variable to specify the path to the service account key
+ENV GOOGLE_APPLICATION_CREDENTIALS=/app/datazoomcamp-project-420918-f66f02d20ed7.json
+
+# Copy the service account key into the container
+COPY datazoomcamp-project-420918-f66f02d20ed7.json /app/datazoomcamp-project-420918-f66f02d20ed7.json
+
+# Run the script when the container launches
+CMD ["python", "Ingest_data.py"]
