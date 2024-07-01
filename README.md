@@ -1,7 +1,7 @@
 # Traffic-Data-Analysis-ETL-Pipeline-in-GCP!
 # Data Pipeline Architecture
 ![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/94b6180a-5c64-48da-93bc-f07ac007e998)
-Traffic Flow Data Analysis in London Boroughs ETL Pipeline:
+# Traffic Flow Data Analysis in London Boroughs ETL Pipeline:
 
 ## Overview:
 This report aims to analyze and present traffic flow variations across different boroughs in London. The study focuses on several key aspects of traffic patterns, including peak hour trends, average traffic counts, daily variations, and differences between weekdays and weekends. Additionally, it compares current traffic data with historical data from previous years to identify any significant changes.
@@ -52,6 +52,8 @@ I will outline the data pipeline workflow implemented on Google Cloud Platform (
 1.  Data Ingestion
 Initial Data Storage: The raw data is initially stored on a local PC.
 Uploading to Google Cloud Storage: Using a Docker script, the raw data is ingested from the local PC to Google Cloud Storage (GCS).
+![Screenshot 2024-07-01 092237](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/ad37ef33-1728-4ce3-8881-73a27b0ab62c)
+![Screenshot 2024-07-01 092326](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/5d811e59-9936-4cd5-a5d6-6c5be103df6e)
 
 2. Cluster Creation
 Setting Up a Cluster: A 2-node cluster with standard configurations is created based on the data file size. This setup leverages parallel processing to handle the data efficiently.
@@ -59,15 +61,32 @@ Setting Up a Cluster: A 2-node cluster with standard configurations is created b
 3. Data Transformation with Apache Spark
 Applying Transformations: Apache Spark is used to apply transformations to the data across the cluster. This step involves cleaning the data and removing unnecessary information to get it into a usable format.
 Storing Transformed Data: The cleaned and transformed data is stored back in GCS in a separate folder designated for transformed data.
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/52f52953-a1f1-46b4-97f0-cdd0669969e7)
+#### Before transformations:
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/5b5b1c17-d909-4d2f-9ed4-a671623b8d0f)
+#### After Transformed the data:
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/0f2a2015-d429-4d3b-8418-296a5c583973)
+
 4. ETL Pipeline Orchestration
 Using Mage for Orchestration: A Docker container running the Mage application is used as an orchestration tool. Mage integrates the data source and target location and provides additional functionality for scheduling ETL (Extract, Transform, Load) jobs.
 Building the ETL Pipeline: Within Mage, an ETL pipeline is built to perform necessary transformations before the data is loaded into the data warehouse.
 
 5. Loading Data into Google BigQuery
 Final Transformations and Loading: After all transformations are completed in Mage, the data is loaded into Google BigQuery, which serves as the data warehouse.
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/8564c4d6-4280-4591-ad83-b103848c4055)
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/f34f612b-899b-4865-950e-a89f023a71e3)
+
 6. Data Analysis and Visualization
 Analyzing Data: BigQuery is used to fetch answers to analytical problems based on the given problem statements.
 Visualization with Looker Studio: The results are then connected to Looker Studio, a visualization tool, to create pictorial representations of the data. This helps in presenting the solution effectively to the staff.
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/3be6a9b8-1f09-4cd6-9d65-301c9a879205)
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/29943c86-9e85-427e-adb0-2fe10ff2d3f5)
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/238c1749-660d-4c19-a34e-2b2993f8f219)
+![image](https://github.com/sivasankarseelam/Traffic-Data-Analysis-ETL-Pipeline-in-GCP/assets/133698242/a1aebd33-df42-4e6b-b019-6a72a9f3bcda)
+
+
+
+
 
 
 
